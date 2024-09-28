@@ -1,0 +1,82 @@
+﻿Performance Analysis of Top 20 Binance Accounts
+1. Introduction
+This report provides a comprehensive analysis of historical trade data from Binance accounts over a 90-day period. The goal of this analysis was to assess the financial performance of each account by calculating key financial metrics such as Return on Investment (ROI), Profit and Loss (PnL), Maximum Drawdown (MDD), Sharpe Ratio, Win Rate, and other performance indicators. Based on these metrics, we ranked the accounts and identified the top 20 performers.
+2. Objective
+The primary objective of this analysis is to evaluate and rank the top 20 Binance accounts by:
+* Calculating financial performance metrics such as ROI, PnL, MDD, Sharpe Ratio, Win Rate, etc.
+* Providing a ranking system based on a weighted score derived from these metrics.
+* Identifying performance trends and potential areas for improvement in trading strategies.
+3. Methodology
+3.1 Data Exploration and Cleaning
+* The dataset contained information on various accounts, including trade histories, timestamps, asset types, and trade details.
+* We inspected the dataset for missing values and outliers. Some data preprocessing was required to handle missing values and standardize formats.
+* Key variables for analysis included quantity, realized profit, price, side (BUY/SELL), and position classification.
+3.2 Feature Engineering
+* We derived new features such as win positions (profitable trades), total positions (total trades), and categorized trades as long_open, long_close, etc.
+* Financial metrics were calculated as follows:
+   * ROI (Return on Investment): Calculated as the ratio of profit to the initial investment.
+   * PnL (Profit and Loss): Total profit or loss over the period.
+   * MDD (Maximum Drawdown): The largest drop from a peak to a trough in asset value.
+   * Sharpe Ratio: Risk-adjusted return calculated as the ratio of mean profit to the standard deviation of profit.
+   * Win Rate: Percentage of trades that were profitable.
+3.3 Ranking Algorithm
+* Each account was assigned a weighted score based on key performance indicators:
+   * ROI, PnL, MDD, Win Rate, Sharpe Ratio, and total positions were considered.
+   * The ranking system was designed to prioritize accounts with higher ROI, better risk-adjusted returns (Sharpe Ratio), and a lower MDD, reflecting both profitability and risk management.
+4. Results
+4.1 Top 20 Accounts by Performance
+The following table displays the top 20 accounts based on the overall score derived from the calculated metrics:
+Port_IDs
+	Investment
+	Total Profit
+	MDD
+	Sharpe Ratio
+	Win Rate
+	Score
+	3733192481840423936
+	5.53e+10
+	2923.98
+	0.76
+	0.06
+	80.26%
+	32.03
+	3986814617275053313
+	1.77e+07
+	16337.46
+	0.15
+	0.33
+	78.22%
+	31.35
+	3886752488982104320
+	1.99e+10
+	7195.18
+	0.03
+	0.22
+	74.54%
+	29.83
+	3956048468100538880
+	5.64e+09
+	1373.56
+	0.00
+	0.52
+	71.43%
+	28.62
+	...
+	...
+	...
+	...
+	...
+	...
+	...
+	4.2 Key Insights
+1. Inconsistent ROI: Several accounts with large profits (e.g., 3733192481840423936) had very low ROI values, indicating inefficient capital utilization despite high profits.
+2. High Volatility: Some accounts showed high standard deviation in profits, leading to a low Sharpe ratio. This highlights increased risk in these accounts.
+3. Win Rate: Accounts with higher win rates (e.g., 80.26%) ranked higher, but some of these accounts had low Sharpe Ratios, indicating that profitable trades might be less impactful relative to the risks.
+4. Large Drawdowns: Certain accounts (e.g., 3999240873283311617) exhibited excessive Maximum Drawdown (MDD), signaling vulnerability to large losses in the trading strategy.
+5. Challenges Faced
+1. Low ROI despite High Profit: Accounts with large absolute profits exhibited very low ROI, suggesting large capital outlay for marginal gains.
+2. Risk-Adjusted Returns: Many accounts had low Sharpe Ratios, indicating that the returns did not adequately compensate for the risks taken.
+3. Large Maximum Drawdown (MDD): Some accounts experienced significant drawdowns, suggesting poor risk management practices or over-leveraged positions.
+4. Data Inconsistency: Handling missing values and inconsistent data required careful preprocessing and impacted the completeness of the analysis.
+6. Conclusion
+This analysis provides a detailed assessment of the top 20 Binance accounts based on their performance over the last 90 days. While some accounts have demonstrated strong profitability, many are struggling with low risk-adjusted returns and inconsistent capital efficiency. Moving forward, improving risk management and optimizing trade selection could lead to better financial outcomes for these accounts.
